@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="car" class="Car">
+		<constructor-arg name="reg" value="201-G-1"></constructor-arg>
+		<constructor-arg name="engineSize" value="1.3"></constructor-arg>
+	</bean>
+	<bean id="car2" class="Car">
+		<constructor-arg name="reg" value="131-WH-14"></constructor-arg>
+		<constructor-arg name="engineSize" value="1.0"></constructor-arg>
+	</bean>
+	
+	<bean id="addr1" class="Address">
+		<constructor-arg name="street" value="Main"></constructor-arg>
+		<constructor-arg name="town" value="Tuam"></constructor-arg>
+		<constructor-arg name="county" value="Galway"></constructor-arg>
+	</bean>
+	<bean id="addr2" class="Address">
+		<constructor-arg name="street" value="Castle"></constructor-arg>
+		<constructor-arg name="town" value="Athlone"></constructor-arg>
+		<constructor-arg name="county" value="Westmeath"></constructor-arg>
+	</bean>
+	<bean id="address" class="Address">
+		<constructor-arg name="street" value="High"></constructor-arg>
+		<constructor-arg name="town" value="Castlebar"></constructor-arg>
+		<constructor-arg name="county" value="Mayo"></constructor-arg>
+	</bean>
+	
+	<bean id="person1" class="Person" autowire="byName">
+		<constructor-arg name="name" value="John Smith"></constructor-arg>
+	</bean>
+</beans>

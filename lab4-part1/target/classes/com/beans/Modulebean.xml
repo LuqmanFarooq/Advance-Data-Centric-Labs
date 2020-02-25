@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="ssrad" class="Module">
+		<constructor-arg name="moduleName" value="Server Side RAD"></constructor-arg>
+		<constructor-arg name="credits" value="30"></constructor-arg>
+		<constructor-arg name="allCA" value="true"></constructor-arg>
+	</bean>
+	<bean id="project" class="Module">
+		<constructor-arg name="moduleName" value="3rd Year Project"></constructor-arg>
+		<constructor-arg name="credits" value="15"></constructor-arg>
+		<constructor-arg name="allCA" value="true"></constructor-arg>
+	</bean>
+	<bean id="javaprogramming" class="Module">
+		<constructor-arg name="moduleName" value="Java Programming"></constructor-arg>
+		<constructor-arg name="credits" value="30"></constructor-arg>
+		<constructor-arg name="allCA" value="false"></constructor-arg>
+	</bean>
+</beans>

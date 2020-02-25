@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<bean id="addr" class="Address">
+		<constructor-arg name="town" value="Ballinasloe"></constructor-arg>
+		<constructor-arg name="county" value="Galway"></constructor-arg>
+	</bean>
+	<bean id="addr1" class="Address">
+		<constructor-arg name="town" value="Citi housing"></constructor-arg>
+		<constructor-arg name="county" value="Sialkot"></constructor-arg>
+	</bean>
+	<bean id="address" class="Address">
+		<constructor-arg name="town" value="Castlebar"></constructor-arg>
+		<constructor-arg name="county" value="Mayo"></constructor-arg>
+	</bean>
+	<bean id="person" class="Person">
+		<constructor-arg name="name" value="John"></constructor-arg>
+	</bean>
+</beans>
